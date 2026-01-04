@@ -1,6 +1,9 @@
 body {
     margin: 0;
     background-color: #f4effa;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 /* header */
@@ -24,6 +27,9 @@ body {
 
 /* logo */
 .logo {
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-style: normal;
     font-size: rem;
     font-weight: 800;
     letter-spacing: 0.12em;
@@ -89,7 +95,7 @@ h1, h2, h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle at top, #c5afde, #ebe1c5);
+    background: radial-gradient(circle at top, #c5afde, #faf8f2);
     color: #f4effa;
     position: relative;
     overflow: hidden;
@@ -116,7 +122,7 @@ h1, h2, h3 {
     font-size: 1.1rem;
     letter-spacing: 0.12em;
     margin-top: 1.5rem;
-    color: #e6d9ff;
+    color: #2a134d;
     z-index: 1;
 }
 
