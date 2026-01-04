@@ -1,1 +1,234 @@
+body {
+    margin: 0;
+    background-color: #f4effa;
+}
 
+/* header */
+.header {
+    background: linear-gradient(120deg, #c0b3ce, #9376b4);
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* navigation */
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+.logo {
+    font-size: rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: #f4effa;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 190, 255, 0.6);
+}
+
+/* nav links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e6d9ff;
+    letter-spacing: 0.1em;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* underline glow */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 0%;
+    height: 2px;
+    background: #dec4e9;
+    box-shadow: 0 0 8px #dec4e9;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links a:hover::after {
+    width: 120%;
+}
+
+section {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.portfolio {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #c5afde, #ebe1c5);
+    color: #f4effa;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(#ffffff33 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.15;
+}
+
+.portfolio h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255, 190, 255, 0.5);
+    z-index: 1;
+}
+
+.portfolio p {
+    font-size: 1.1rem;
+    letter-spacing: 0.12em;
+    margin-top: 1.5rem;
+    color: #e6d9ff;
+    z-index: 1;
+}
+
+/* about */
+.about {
+    background: #f4effa;
+    color: #2a134d;
+}
+
+.about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* skills */
+.skills {
+    background: linear-gradient(135deg, #e6d9ff, #f9f5ff);
+    color: #2a134d;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 3rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.skills li {
+    padding: 0.8rem 1.5rem;
+    border-radius: 999px;
+    background: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    box-shadow: 0 8px 20px rgba(92, 45, 145, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(92, 45, 145, 0.25);
+}
+
+/* projectcs*/
+.projects {
+    background: #f4effa;
+    color: #2a134d;
+}
+
+.project-card {
+    background: linear-gradient(#e3ddea, #ffffff);
+    max-width: 320px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card h3 {
+    margin-bottom: 1rem;
+    color: #2a134d;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) rotate(-1deg);
+    box-shadow: 0 20px 40px rgba(169, 146, 193, 0.618);
+}
+
+/* contact*/
+.contact {
+    background: linear-gradient(120deg, #c0b3ce, #9376b4);
+    color: #f4effa;
+}
+
+.contact p {
+    letter-spacing: 0.1em;
+    margin: 1rem 0;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 4rem 1.5rem;
+    }
+
+    .skills ul {
+        gap: 1rem;
+    }
+
+    .project-card {
+        max-width: 90%;
+    }
+}
+/* Mobile */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 1.4rem;
+    }
+}
