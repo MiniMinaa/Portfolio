@@ -34,7 +34,7 @@ body {
 
 /* header */
 .header {
-    padding: 0.1rem 0;
+    padding: 0;
     top: 0;
     z-index: 100;
     position: sticky;
@@ -58,11 +58,8 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
-    font-weight: 800;
     letter-spacing: 0.12em;
     color: #705C53;
-    text-transform: uppercase;
-    text-shadow: 0 0 20px rgba(245, 245, 247, 0.5);
 }
 
 /* nav links */
@@ -106,11 +103,6 @@ body {
     width: 120%;
 }
 
-.mina-img {
-    display: flex;
-    margin-right: 100px;
-}
-
 section {
     padding: 6rem 2rem;
     text-align: center;
@@ -127,7 +119,6 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     background: #F5F5F7;
-    background-size: 600% 600%;
     color: #705C53;
     position: relative;
     overflow: hidden;
@@ -156,7 +147,8 @@ h1, h2, h3 {
     border-radius: 50%;
     overflow: hidden;
     outline: 3px solid #705C53;
-    object-fit: cover;
+    display: flex;
+    margin-right: 100px;
 }
 
 .mina-img img {
@@ -277,8 +269,8 @@ h1, h2, h3 {
 
 /* contact */
 .contact {
-    background: #705c53a4;
-    color: #F5F5F7;
+    background: #F5F5F7;
+    color: #705C53;
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
@@ -289,6 +281,17 @@ h1, h2, h3 {
 .contact-top {
     width: 30%;
     text-align: center;
+}
+.contact-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon-link img {
+    width: 28px;
+    height: 28px;
 }
 
 #menu-toggle {
